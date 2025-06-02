@@ -5,6 +5,10 @@ from aiogram import Bot, Dispatcher, types
 from aiogram.filters import Command
 from aiogram.types import Message
 from aiogram import F
+from keep_alive import keep_alive
+
+# Запускаем веб-сервер, чтобы Replit не засыпал
+keep_alive()
 
 # 🔑 Твои ключи
 MISTRAL_API_KEY = "mst_api_c9b21cfb8c47b194b83649df9872ec68b5e80c49"  # API ключ из фото
